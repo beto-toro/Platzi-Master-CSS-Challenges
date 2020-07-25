@@ -1,0 +1,97 @@
+:root {
+  --colorBrand: #6200EE;
+  --colorWhite: white;
+  --colorBlack: black;
+  --colorBody: #E5E5E5;
+  --colorGrey: grey;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100vw;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--colorBody);
+}
+
+.back {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 500px;
+  height: 500px;
+  background-color: var(--colorWhite);
+  /* box-shadow: 0 5px 10px rgba(0, 0, 0, .3); */
+}
+
+.card__one {
+  width: 95%;
+  height: 370px;
+  background-color: var(--colorWhite);
+  border: 1px solid var(--colorGrey);
+  border-radius: 5px;
+}
+
+.image {
+  width: 100%;
+  height: 250px;
+  background-image: url('https://s03.s3c.es/imag/_v0/770x420/1/7/4/atardecer.jpg');
+  background-size: cover;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  height: 120px;
+  padding: 15px 15px 0 15px;
+}
+
+.description a {
+  font-size: 18px;
+  margin-top: 25px;
+  color: green;
+}
+
+.card__two {
+  display: flex;
+  align-items: center;
+  width: 95%;
+  height: 115px;
+  padding: 15px;
+  border: 1px solid var(--colorGrey);
+  border-radius: 5px;
+}
+
+.card__two div {
+  width: 100%;
+}
+
+.card__two img {
+  float: left;
+  margin-right: 15px;
+  border-radius: 50%;
+}
+
+/* h4 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateX(-50%);
+} */
